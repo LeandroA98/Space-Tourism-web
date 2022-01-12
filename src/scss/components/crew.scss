@@ -45,7 +45,7 @@
 					.bullets {
 						@include mix.displayFlex(row, center, flex-start);
 						width: 100%;
-						gap: 1em;
+						gap: 2em;
 						button {
 							width: 10px;
 							height: 12px;

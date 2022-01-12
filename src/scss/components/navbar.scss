@@ -27,8 +27,7 @@ header {
 	.navbar {
 		@include mixin.displayFlex(row, center, center);
 		width: 65%;
-		background-color: rgba(128, 109, 109, 0.2);
-		backdrop-filter: blur(10px);
+		background-color: rgba(0, 0, 0, 0.5);
 		margin-top: 2em;
 		.close {
 			display: none;
@@ -50,7 +49,14 @@ header {
 			&:hover {
 				border-bottom: 2px solid #fff !important;
 			}
+		}		
+	}
+	@supports (backdrop-filter: blur(10px)) {
+		.navbar {
+			background-color: rgba(128, 109, 109, 0.2);
+			backdrop-filter: blur(10px);
 		}
+		
 	}
 }
 
@@ -124,7 +130,7 @@ header {
 			padding: 0;
 			z-index: 5;
 			transition: 0.3s ease-in-out;
-			backdrop-filter: blur(20px);
+			background-color: rgba(0, 0, 0, 0.5);
 			.close {
 				display: block;
 				width: 100%;
@@ -157,6 +163,13 @@ header {
 
 				}
 			}
+		}
+		@supports (backdrop-filter: blur(20px)) {
+			.navbar {
+				background-color: rgba(128, 109, 109, 0.2);
+				backdrop-filter: blur(20px);
+			}
+			
 		}
 	}
 }

@@ -11,7 +11,7 @@
 
 ## Overview
 
-It's a fully functional and interactive website with lots of informative panels a very stylish desing.
+It's a fully functional and interactive website with lots of informative panels and a very stylish desing.
 
 ### The Challenge
 
@@ -23,7 +23,7 @@ Users are able to:
 
 ### Link
 
-Live site URL:
+Live site URL: (https://leandroa98.github.io/Space-Tourism-web/#/)
 
 ### Built with
 
